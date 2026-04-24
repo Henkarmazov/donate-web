@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-patrick: "Patrick Hand", cursive;
+  
+  --shadow-hard: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  --shadow-hard-lg: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+  --shadow-hard-xl: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  
+  --color-sketch-yellow: #fef08a;
+  --color-sketch-blue: #60a5fa;
+  --color-sketch-blue-dark: #2563eb;
+  --color-sketch-pink: #f472b6;
+  --color-sketch-red: #ef4444;
+}
+
+@layer base {
+  body {
+    @apply font-patrick bg-[#fafaf9] text-gray-900;
+  }
+}
+
+@layer utilities {
+  .sketch-border {
+    border: 3px solid black;
+    border-radius: 4px;
+  }
+  
+  .sketch-border-thick {
+    border: 4px solid black;
+    border-radius: 4px;
+  }
+
+  .hard-shadow {
+    box-shadow: var(--shadow-hard);
+  }
+
+  .hard-shadow-lg {
+    box-shadow: var(--shadow-hard-lg);
+  }
+
+  .hard-shadow-none {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  }
+  
+  .jittery {
+    animation: jitter 0.2s infinite;
+  }
+
+  @keyframes jitter {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-1px, 1px); }
+    50% { transform: translate(1px, -1px); }
+    75% { transform: translate(-1px, -1px); }
+    100% { transform: translate(1px, 1px); }
+  }
+
+  .floating {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
