@@ -339,13 +339,13 @@ export default function App() {
   }}
   className="w-full py-4 bg-white sketch-border-thick hard-shadow-lg text-xl font-bold hover:-translate-y-1 active:translate-y-1 active:hard-shadow-none transition-all duration-75"
 >
-  Kembali ke <span className="text-sketch-blue">Hen</span><span className="text-sketch-pink">Karmazov</span>
+  Kembali ke <span className="text-sketch-blue">Hen</span><span className="text-sketch-pink">Veronime</span>
 </button>
             </div>
           </motion.div>
 
           <footer className="w-full text-gray-400 font-medium text-sm text-center">
-            © 2026 HenKarmazov — All rights reserved
+            © 2026 Henkaramazov — All rights reserved
           </footer>
         </div>
       </div>
@@ -653,7 +653,7 @@ export default function App() {
         </footer>
 
         <footer className="py-12 w-full text-gray-400 font-medium text-sm text-center border-t border-black/5 mt-8">
-          © 2026 HenKarmazov — All rights reserved
+          © 2026 Henkaramazov — All rights reserved
         </footer>
       </motion.div>
     </div>
