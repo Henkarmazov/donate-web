@@ -334,13 +334,13 @@ export default function App() {
                 Kembali
               </button>
               <button 
-                onClick={() => {
-                  window.location.href = 'https://www.henkarmazov.my.id/';
-                }}
-                className="w-full py-4 bg-white sketch-border-thick hard-shadow-lg text-xl font-bold hover:-translate-y-1 active:translate-y-1 active:hard-shadow-none transition-all duration-75"
-              >
-                Kembali ke <span className="text-sketch-blue">Hen</span><span className="text-sketch-pink">Karmazov</span>
-              </button>
+  onClick={() => {
+    window.location.replace('https://www.henkarmazov.my.id/');
+  }}
+  className="w-full py-4 bg-white sketch-border-thick hard-shadow-lg text-xl font-bold hover:-translate-y-1 active:translate-y-1 active:hard-shadow-none transition-all duration-75"
+>
+  Kembali ke <span className="text-sketch-blue">Hen</span><span className="text-sketch-pink">Karmazov</span>
+</button>
             </div>
           </motion.div>
 
